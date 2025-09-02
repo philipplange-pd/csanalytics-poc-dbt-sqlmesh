@@ -1,0 +1,11 @@
+databricks:
+  outputs:
+    pi_ideation_dbt:
+      catalog: car_sales_dev
+      host: dbc-7147879e-2dea.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/872a8c14586ed4cd
+      schema: pi_ideation_dbt
+      threads: 8
+      token: <DATABRICKS_ACCESS_TOKEN>
+      type: databricks
+  target: pi_ideation_dbt
