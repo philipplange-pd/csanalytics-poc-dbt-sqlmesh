@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+    - name: vds_vehicle_data
+      catalog: car_sales_prod
+      schema: vds_vehicle_data_prod
+      tables:
+          - name: sdp_vds_vehicle_data_demo
+    - name: inventory_vehicles
+      catalog: car_sales_prod
+      schema: inventory_vehicles_prod
+      tables:
+          - name: sdp_inventory_vehicles_demo
+          - name: raw_inventory_vehicles_demo
+          - name: raw_inventory_vehicles_preview
+    - name: master_data
+      catalog: car_sales_dev
+      schema: master_data
+      tables:
+          - name: markets

@@ -1,0 +1,24 @@
+name: 'pi_ideation_dbt'
+version: '1.0.0'
+
+profile: 'databricks'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  +persist_docs:    # show descriptions also in Databricks
+    relation: true
+    columns: true
+  pi_ideation_dbt:
+    test:
+      +materialized: view
+      +schema: test
