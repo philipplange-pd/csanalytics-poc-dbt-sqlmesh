@@ -1,0 +1,30 @@
+- name: '`car_sales_prod`.`inventory_vehicles_prod`.`raw_inventory_vehicles_demo`'
+  columns:
+    key: STRING
+    topic: STRING
+    timestamp: TIMESTAMP
+    value: STRING
+    processed_at: TIMESTAMP
+  gateway: databricks
+- name: '`car_sales_prod`.`inventory_vehicles_prod`.`raw_inventory_vehicles_preview`'
+  columns:
+    key: STRING
+    topic: STRING
+    timestamp: TIMESTAMP
+    value: STRING
+    processed_at: TIMESTAMP
+  gateway: databricks
+- name: '`car_sales_prod`.`vds_vehicle_data_prod`.`sdp_vds_vehicle_data_demo`'
+  columns:
+    inventory_id: STRING
+    model_series: STRING
+    engine_type: STRING
+    processed_at: TIMESTAMP
+  gateway: databricks
+- name: '`car_sales_dev`.`master_data`.`markets`'
+  columns:
+    ID: BIGINT
+    region: STRING
+    market: STRING
+    country: STRING
+  gateway: databricks
