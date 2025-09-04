@@ -1,0 +1,10 @@
+.venv/
+.vscode/
+.cache/
+__pycache__/
+logs/
+config.yaml
+databricks_state.db
+databricks_state.db.wal
+databricks_prod_state.db
+databricks_prod_state.db.wal
