@@ -66,4 +66,8 @@ final_aggregated as (
         dealer_name
 )
 
-select * from final_aggregated
+select * from final_aggregated;
+
+ON_VIRTUAL_UPDATE_BEGIN;
+GRANT SELECT ON VIEW @this_model TO `philipp.lange@mhp.com`;
+ON_VIRTUAL_UPDATE_END;
